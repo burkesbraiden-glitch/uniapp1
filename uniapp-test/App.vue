@@ -1,0 +1,64 @@
+<script setup lang="ts">
+import { onLaunch, onShow, onHide } from '@dcloudio/uni-app'
+
+onLaunch(() => {
+  console.log('App Launch')
+})
+
+onShow(() => {
+  console.log('App Show')
+})
+
+onHide(() => {
+  console.log('App Hide')
+})
+</script>
+
+<style lang="scss">
+page {
+  background-color: #f5f7fa;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+view, text {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 20rpx;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16rpx;
+  box-shadow: 0 2rpx 16rpx rgba(0, 0, 0, 0.06);
+  padding: 32rpx;
+  margin-bottom: 24rpx;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border: none;
+  border-radius: 40rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 32rpx;
+}
+
+.btn-primary:active {
+  opacity: 0.8;
+}
+
+.text-primary {
+  color: #667eea;
+}
+
+.text-danger {
+  color: #f56c6c;
+}
+
+.text-gray {
+  color: #909399;
+}
+</style>

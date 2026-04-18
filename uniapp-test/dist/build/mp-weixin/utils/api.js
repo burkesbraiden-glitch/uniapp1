@@ -1,0 +1,1 @@
+"use strict";const t="http://localhost:5000",e=t;exports.API_BASE_URL=e,exports.getImageUrl=e=>e?e.startsWith("http")?e:`${t}${e}`:"https://via.placeholder.com/150",exports.isH5=()=>{var t;if("undefined"==typeof window)return!1;const e=(null==(t=window.navigator)?void 0:t.userAgent)||"";return!/miniProgram/i.test(e)&&!/(?:App|Android|iPhone)/i.test(e)};
